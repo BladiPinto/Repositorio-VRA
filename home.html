@@ -1,0 +1,133 @@
+<!-- 
+    REPOSITORIO VRA:
+    Busqueda de Documentos, Reglamentos ,etc.
+    By: Edson Bladimir Pinto Luque
+    e-mail: epintol@est.unap.edu.pe
+    Cel: 969302245
+    Practicante, FINESI.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Vra</title>
+
+     <!-- Normalize CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Materialize CSS -->
+   <link rel="stylesheet" href="css/materialize.min.css">
+   
+    <!-- Material Design Iconic Font CSS -->
+   <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+   
+   <!-- Malihu jQuery custom content scroller CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+   
+   <!-- Sweet Alert CSS -->
+   <link rel="stylesheet" href="css/sweetalert.css">
+   
+   <!-- MaterialDark CSS -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- barra Lateral -->
+    <section class="NavLateral full-width">
+        <div class="NavLateral-content full-width">
+            <header class="NavLateral-title full-width center-align">
+                Repositorio VRA <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+            </header>
+            <div class="NavLateral-Nav">
+                <ul class="full-width">
+                    <li>
+                        <a href="home.html" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> UNAP</a>
+                    </li>
+                    <li class="NavLateralDivider"></li>
+                    <li>
+                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> REGLAMENTOS</a>
+                        <ul class="full-width">
+                            <li><a href="home.html" class="waves-effect waves-light">Regla1</a></li>
+                            <li class="NavLateralDivider"></li>
+                            <li><a href="home.html" class="waves-effect waves-light">Regla2</a></li>
+                        </ul>
+                    </li>
+                    <li class="NavLateralDivider"></li>
+                    <li>
+                        <a href="home.html" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> REGLAMENTOS</a>
+                        <ul class="full-width">
+                            <li><a href="#" class="waves-effect waves-light">Regla3</a></li>
+                            <li class="NavLateralDivider"></li>
+                            <li><a href="#" class="waves-effect waves-light">Regla4</a></li>
+                        </ul>
+                    </li>
+                    <li class="NavLateralDivider"></li>
+                    <li>
+                        <a href="home.html" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> REGLAMENTOS</a>
+                        <ul class="full-width">
+                            <li><a href="#" class="waves-effect waves-light">Regla5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+     <!-- Page content -->
+    <section class="ContentPage full-width">
+        <!-- Barra nav Superior -->
+        <div class="ContentPage-Nav full-width">
+            <ul class="full-width">
+                <li><figure><img src="/assets/img/usuario.png" alt="UserImage"></figure></li>
+                <li style="padding:0 5px;">Usuario</li>
+                <li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Salir"><i class="zmdi zmdi-power"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="row">
+            <!-- Tiles -->
+            <section class="formulariobusqueda">
+                <form class="formhome">
+                    <div class="input-wrapper">
+                    <input type="text" id="nombre" name="nombre" placeholder="Por Nombre">
+                    </div>
+                    <div class="input-wrapper">
+                    <input type="date" id="fecha" name="fecha" >
+                    </div>
+                    <div class="input-wrapper">
+                    <input type="number" id="numero" name="numero" placeholder="Por Número">
+                    </div>
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+                            
+        </div>
+
+        <footer class="footer-MaterialDark">
+            <div class="container center-align">
+                <p>VICERRECTORADO ACADEMICO</p>
+            </div>
+            <div class="NavLateralDivider"></div>
+            <div class="footer-copyright">
+                <div class="container center-align">
+                    © 2023 Edson Bladimir Pinto Luque
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Sweet Alert JS -->
+    <script src="js/sweetalert.min.js"></script>
+    
+    <!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.2.0.min.js"><\/script>')</script>
+    
+    <!-- Materialize JS -->
+	<script src="js/materialize.min.js"></script>
+    
+    <!-- Malihu jQuery custom content scroller JS -->
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <!-- MaterialDark JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
