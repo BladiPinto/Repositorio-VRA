@@ -244,23 +244,23 @@ html {
     animation: fadeIn 0.5s ease-in-out;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .input-wrapper {
+}
+
+.input-wrapper {
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
-  }
-  input {
+}
+input {
     padding: 0.5rem;
     border: none;
     border-radius: 3px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
     width: 12rem;
-  }
-  
-  button {
+}
+
+button {
     position: relative;
     background-color: #007bff;
     color: #fff;
@@ -270,23 +270,47 @@ html {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     padding: 0.5rem 1rem;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0062cc;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(10%);
+        opacity: 0;
+        transform: translateY(10%);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
+
+/*///////////////////////// FORMULARIO SUBIR PDF /////////////////////////*/
+.formulario-pdf {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario-pdf label{
+    font-size: 13px;
+    color: #000000;
+}
+.form-group-botones{
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.input-file{
+    width: auto;
+}
+
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /*///////////////////////// MediaQueries /////////////////////////*/
 @media (max-width: 767px){
     /*===Timeline*/

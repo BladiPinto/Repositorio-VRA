@@ -84,22 +84,25 @@
         </div>
         
         <div class="row">
-            <!-- Buscadores -->
-            <section class="formulariobusqueda">
-                <form class="formhome">
-                    <div class="input-wrapper">
-                    <input type="text" id="nombre" name="nombre" placeholder="Por Nombre">
-                    </div>
-                    <div class="input-wrapper">
-                    <input type="date" id="fecha" name="fecha" >
-                    </div>
-                    <div class="input-wrapper">
-                    <input type="number" id="numero" name="numero" placeholder="Por Número">
-                    </div>
-                    <button type="submit">Buscar</button>
-                </form>
-            </section>
-                            
+            <h4 class="center-align">SUBIR DOCUMENTO</h4>
+            <form method="post" action="subirpdf.php" enctype="multipart/form-data" class="formulario-pdf">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" name="titulo" id="titulo" >
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" ></textarea>
+                </div>
+                <div class="archivo-seleccionar">
+                    <label for="archivo">Archivo PDF</label>
+                    <input type="file" name="archivo" id="archivo" class="input-file">
+                </div>
+                <div class="form-group-botones">
+                    <button type="submit" name="subir" class="boton-subir">Subir</button>
+                    <button><a href="lista.php" style="color: #fff;">Mostrar</a></button>
+                </div>
+            </form>
         </div>
 
         <footer class="footer-MaterialDark">
