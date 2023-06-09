@@ -36,7 +36,7 @@
     <section class="NavLateral full-width">
         <div class="NavLateral-content full-width">
             <header class="NavLateral-title full-width center-align">
-                Repositorio VRA <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+                <a href="home.html" style="color: #fff;">Repositorio VRA <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i></a> 
             </header>
             <div class="NavLateral-Nav">
                 <ul class="full-width">
@@ -63,9 +63,11 @@
                     </li>
                     <li class="NavLateralDivider"></li>
                     <li>
-                        <a href="home.html" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> REGLAMENTOS</a>
+                        <a href="home.html" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> OPCIONES</a>
                         <ul class="full-width">
-                            <li><a href="#" class="waves-effect waves-light">Regla5</a></li>
+                            <li><a href="home.html" class="waves-effect waves-light">Buscar Documentos</a></li>
+                            <li class="NavLateralDivider"></li>
+                            <li><a href="home.html" class="waves-effect waves-light">Listar Documentos</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -78,7 +80,6 @@
         <div class="ContentPage-Nav full-width">
             <ul class="full-width">
                 <li><figure><img src="assets/img/usuario.png" alt="UserImage"></figure></li>
-                <li style="padding:0 5px;">Usuario</li>
                 <li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Salir"><i class="zmdi zmdi-power"></i></a></li>
             </ul>
         </div>
@@ -86,24 +87,33 @@
         <div class="row">
             <h4 class="center-align">SUBIR DOCUMENTO</h4>
             <form method="post" action="subirpdf.php" enctype="multipart/form-data" class="formulario-pdf">
-                <div class="form-group">
-                    <label for="titulo">Título</label>
-                    <input type="text" name="titulo" id="titulo" >
-                </div>
-                <div class="form-group">
-                    <label for="descripcion">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" ></textarea>
-                </div>
-                <div class="archivo-seleccionar">
-                    <label for="archivo">Archivo PDF</label>
-                    <input type="file" name="archivo" id="archivo" class="input-file">
-                </div>
-                <div class="form-group-botones">
-                    <button type="submit" name="subir" class="boton-subir">Subir</button>
-                    <button><a href="lista.php" style="color: #fff;">Mostrar</a></button>
-                </div>
+              <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" name="titulo" id="titulo" required>
+              </div>
+              <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion"></textarea required>
+              </div>
+              <div class="form-group">
+                <label for="tipo_documento">Tipo de Documento</label>
+                <input type="text" name="tipo_documento" id="tipo_documento" placeholder="REGLAMENTO, DIRECTIVA, ESTATUTO, etc" required>
+              </div>
+              <div class="form-group">
+                <label for="fecha_documento">Fecha del Documento</label>
+                <input type="date" name="fecha_documento" id="fecha_documento" required>
+              </div>
+              <div class="archivo-seleccionar">
+                <label for="archivo">Archivo PDF</label>
+                <input type="file" name="archivo" id="archivo" class="input-file" required>
+              </div>
+              <div class="form-group-botones">
+                <button type="submit" name="subir" class="boton-subir">Subir</button>
+                <button><a href="home.html" style="color: #fff;">Mostrar</a></button>
+              </div>
             </form>
-        </div>
+          </div>
+          
 
         <footer class="footer-MaterialDark">
             <div class="container center-align">

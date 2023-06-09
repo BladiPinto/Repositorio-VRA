@@ -292,25 +292,41 @@ button:hover {
     display: block;
     max-width: 500px;
     margin: 0 auto;
-}
-
-.formulario-pdf label{
+  }
+  
+  .formulario-pdf label {
     font-size: 13px;
     color: #000000;
-}
-.form-group-botones{
+  }
+  
+  .form-group-botones {
     padding-top: 15px;
-    padding-bottom: 12px;
-}
-
-.input-file{
+    padding-bottom: 15px;
+  }
+  
+  .input-file {
     width: auto;
-}
-
-h4{
+  }
+  
+  h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
+  }
+  
+  /* Estilos para la lista desplegable */
+  .formulario-pdf select {
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  
+  
 /*///////////////////////// MediaQueries /////////////////////////*/
 @media (max-width: 767px){
     /*===Timeline*/
